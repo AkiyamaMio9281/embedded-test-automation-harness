@@ -1,0 +1,4 @@
+01-01 00:01:00.001  120  140 I CameraService: Opening camera 0 for client com.example.cam
+01-01 00:01:00.205  120  140 E CameraService: Camera service error: device disconnected
+01-01 00:01:00.206  120  140 E BufferQueueProducer: dequeueBuffer: BufferQueue has been abandoned
+01-01 00:01:00.350  121  141 W CameraService: Camera 0 closed with active sessions

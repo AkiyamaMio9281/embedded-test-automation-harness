@@ -1,0 +1,5 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.001234] Linux version 6.6.0-aarch64
+[    0.123456] usb 1-1: new high-speed USB device number 2
+[    1.234567] wlan0: link up, 866Mbps
+[    2.123000] systemd[1]: Reached target multi-user.target

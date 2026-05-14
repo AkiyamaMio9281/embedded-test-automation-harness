@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>chipset_smoke — run_001</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 980px; margin: 32px auto; padding: 0 16px; color: #1f2328; }
+  h1, h2, h3 { line-height: 1.2; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0 24px; font-size: 14px; }
+  th, td { padding: 6px 10px; border: 1px solid #d0d7de; text-align: left; }
+  th { background: #f6f8fa; }
+  tr.pass td { background: #f0fff4; }
+  tr.fail td { background: #fff5f5; }
+  code { background: #f6f8fa; padding: 1px 4px; border-radius: 3px; }
+  .meta { background: #f6f8fa; padding: 12px 16px; border-radius: 6px; }
+  .sev-critical { color: #b91c1c; font-weight: 700; }
+  .sev-high { color: #c2410c; font-weight: 600; }
+  .sev-medium { color: #92400e; }
+  .sev-low { color: #1f6feb; }
+</style>
+</head>
+<body>
+<h1>chipset_smoke</h1>
+<div class="meta">
+  <div><strong>Run ID:</strong> run_001</div>
+  <div><strong>Device:</strong> simulated_android</div>
+  <div><strong>Started:</strong> 2026-05-14T21:59:28.423996+00:00</div>
+  <div><strong>Finished:</strong> 2026-05-14T21:59:28.438572+00:00</div>
+  <div><strong>Pass / Fail:</strong> 10 / 5</div>
+  <div><strong>Flaky tests:</strong> AI-001, BOOT-001, CAM-001, POWER-001, STAB-001</div>
+</div>
+
+<h2>Pass / Fail Table</h2>
+<table>
+  <thead><tr>
+    <th>Test ID</th><th>Iteration</th><th>Status</th><th>Duration (s)</th>
+    <th>Failure</th><th>Triage</th>
+  </tr></thead>
+  <tbody>
+    <tr class="pass">
+      <td>BOOT-001</td>
+      <td>1</td>
+      <td>pass</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="pass">
+      <td>POWER-001</td>
+      <td>1</td>
+      <td>pass</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="pass">
+      <td>AI-001</td>
+      <td>1</td>
+      <td>pass</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="fail">
+      <td>CAM-001</td>
+      <td>1</td>
+      <td>fail</td>
+      <td>0.000</td>
+      <td>command exit_code=1</td>
+      <td>Camera Subsystem</td>
+    </tr>
+    <tr class="pass">
+      <td>STAB-001</td>
+      <td>1</td>
+      <td>pass</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="fail">
+      <td>BOOT-001</td>
+      <td>2</td>
+      <td>fail</td>
+      <td>0.000</td>
+      <td>max_boot_time_sec breached: 38.50 &gt; 35.00</td>
+      <td>Boot Regression</td>
+    </tr>
+    <tr class="fail">
+      <td>POWER-001</td>
+      <td>2</td>
+      <td>fail</td>
+      <td>0.000</td>
+      <td>max_avg_power_mw breached: 905.00 &gt; 800.00</td>
+      <td>Power Regression</td>
+    </tr>
+    <tr class="fail">
+      <td>AI-001</td>
+      <td>2</td>
+      <td>fail</td>
+      <td>0.000</td>
+      <td>max_p95_latency_ms breached: 76.50 &gt; 50.00</td>
+      <td>Performance Regression</td>
+    </tr>
+    <tr class="pass">
+      <td>CAM-001</td>
+      <td>2</td>
+      <td>pass</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="fail">
+      <td>STAB-001</td>
+      <td>2</td>
+      <td>fail</td>
+      <td>0.000</td>
+      <td>command exit_code=1</td>
+      <td>System Stability</td>
+    </tr>
+    <tr class="pass">
+      <td>BOOT-001</td>
+      <td>3</td>
+      <td>pass</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="pass">
+      <td>POWER-001</td>
+      <td>3</td>
+      <td>pass</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="pass">
+      <td>AI-001</td>
+      <td>3</td>
+      <td>pass</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="pass">
+      <td>CAM-001</td>
+      <td>3</td>
+      <td>pass</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="pass">
+      <td>STAB-001</td>
+      <td>3</td>
+      <td>pass</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Failure Triage</h2>
+<h3>CAM-001 (iteration 1)</h3>
+<ul>
+  <li><strong>Reason:</strong> command exit_code=1</li>
+  <li><strong>Category:</strong> Camera Subsystem</li>
+  <li><strong>Owner:</strong> Camera / ISP</li>
+  <li><strong>Severity:</strong> <span class="sev-high">high</span></li>
+  <li><strong>Signature:</strong> <code>camera_service_error</code></li>
+  <li><strong>Next step:</strong> Pull camera HAL + CamX logs, replay with cameraserver verbose tag, check sensor I2C errors.</li>
+  <li><strong>Rationale:</strong> CameraService: Camera service error: device disconnected</li>
+</ul>
+<h3>BOOT-001 (iteration 2)</h3>
+<ul>
+  <li><strong>Reason:</strong> max_boot_time_sec breached: 38.50 &gt; 35.00</li>
+  <li><strong>Category:</strong> Boot Regression</li>
+  <li><strong>Owner:</strong> Kernel / Platform</li>
+  <li><strong>Severity:</strong> <span class="sev-high">high</span></li>
+  <li><strong>Signature:</strong> <code>boot_breach:max</code></li>
+  <li><strong>Next step:</strong> Compare bootchart and dmesg timestamps with the last passing baseline to localize the slowdown to a service or driver init.</li>
+  <li><strong>Rationale:</strong> boot_time_sec was 38.50s against 35.00s threshold.</li>
+</ul>
+<h3>POWER-001 (iteration 2)</h3>
+<ul>
+  <li><strong>Reason:</strong> max_avg_power_mw breached: 905.00 &gt; 800.00</li>
+  <li><strong>Category:</strong> Power Regression</li>
+  <li><strong>Owner:</strong> Thermal / Power</li>
+  <li><strong>Severity:</strong> <span class="sev-high">high</span></li>
+  <li><strong>Signature:</strong> <code>power_breach:mean</code></li>
+  <li><strong>Next step:</strong> Profile idle residency states and check for wakelocks, suspect wireless or display driver wakeups.</li>
+  <li><strong>Rationale:</strong> power_mw mean was 905.00 mW against 800.00 mW threshold.</li>
+</ul>
+<h3>AI-001 (iteration 2)</h3>
+<ul>
+  <li><strong>Reason:</strong> max_p95_latency_ms breached: 76.50 &gt; 50.00</li>
+  <li><strong>Category:</strong> Performance Regression</li>
+  <li><strong>Owner:</strong> Performance / Runtime</li>
+  <li><strong>Severity:</strong> <span class="sev-high">high</span></li>
+  <li><strong>Signature:</strong> <code>latency_breach:p95</code></li>
+  <li><strong>Next step:</strong> Compare runtime logs against the previous passing run and inspect CPU/GPU frequency traces during the regression window.</li>
+  <li><strong>Rationale:</strong> inference_latency_ms p95 was 76.50 against 50.00 threshold.</li>
+</ul>
+<h3>STAB-001 (iteration 2)</h3>
+<ul>
+  <li><strong>Reason:</strong> command exit_code=1</li>
+  <li><strong>Category:</strong> System Stability</li>
+  <li><strong>Owner:</strong> Kernel / Platform</li>
+  <li><strong>Severity:</strong> <span class="sev-critical">critical</span></li>
+  <li><strong>Signature:</strong> <code>kernel_panic</code></li>
+  <li><strong>Next step:</strong> Capture full dmesg and ramoops, decode panic backtrace, bisect kernel commits since last passing build.</li>
+  <li><strong>Rationale:</strong> Kernel panic - not syncing: Attempted to kill init!</li>
+</ul>
+
+<h2>Top Log Signatures</h2>
+<table>
+  <thead><tr><th>Signature</th><th>Count</th></tr></thead>
+  <tbody>
+    <tr><td><code>camera_service_error</code></td><td>1</td></tr>
+    <tr><td><code>driver_timeout</code></td><td>1</td></tr>
+    <tr><td><code>io_error</code></td><td>1</td></tr>
+    <tr><td><code>kernel_panic</code></td><td>1</td></tr>
+    <tr><td><code>thermal_throttling</code></td><td>1</td></tr>
+  </tbody>
+</table>
+
+<h2>Metric Summaries</h2>
+<table>
+  <thead><tr>
+    <th>Test ID</th><th>Iteration</th><th>Metric</th>
+    <th>Mean</th><th>p50</th><th>p95</th><th>p99</th><th>Min</th><th>Max</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>BOOT-001</td>
+      <td>1</td>
+      <td>boot_time_sec</td>
+      <td>30.00</td>
+      <td>30.00</td>
+      <td>30.00</td>
+      <td>30.00</td>
+      <td>30.00</td>
+      <td>30.00</td>
+    </tr>
+    <tr>
+      <td>POWER-001</td>
+      <td>1</td>
+      <td>peak_power_mw</td>
+      <td>840.00</td>
+      <td>840.00</td>
+      <td>840.00</td>
+      <td>840.00</td>
+      <td>840.00</td>
+      <td>840.00</td>
+    </tr>
+    <tr>
+      <td>POWER-001</td>
+      <td>1</td>
+      <td>power_mw</td>
+      <td>720.00</td>
+      <td>720.00</td>
+      <td>736.00</td>
+      <td>736.00</td>
+      <td>704.00</td>
+      <td>736.00</td>
+    </tr>
+    <tr>
+      <td>AI-001</td>
+      <td>1</td>
+      <td>inference_latency_ms</td>
+      <td>41.84</td>
+      <td>41.90</td>
+      <td>45.80</td>
+      <td>45.80</td>
+      <td>38.00</td>
+      <td>45.80</td>
+    </tr>
+    <tr>
+      <td>CAM-001</td>
+      <td>1</td>
+      <td>camera_open_latency_ms</td>
+      <td>180.00</td>
+      <td>180.00</td>
+      <td>180.00</td>
+      <td>180.00</td>
+      <td>180.00</td>
+      <td>180.00</td>
+    </tr>
+    <tr>
+      <td>STAB-001</td>
+      <td>1</td>
+      <td>soak_uptime_sec</td>
+      <td>3600.00</td>
+      <td>3600.00</td>
+      <td>3600.00</td>
+      <td>3600.00</td>
+      <td>3600.00</td>
+      <td>3600.00</td>
+    </tr>
+    <tr>
+      <td>BOOT-001</td>
+      <td>2</td>
+      <td>boot_time_sec</td>
+      <td>38.50</td>
+      <td>38.50</td>
+      <td>38.50</td>
+      <td>38.50</td>
+      <td>38.50</td>
+      <td>38.50</td>
+    </tr>
+    <tr>
+      <td>POWER-001</td>
+      <td>2</td>
+      <td>peak_power_mw</td>
+      <td>1025.00</td>
+      <td>1025.00</td>
+      <td>1025.00</td>
+      <td>1025.00</td>
+      <td>1025.00</td>
+      <td>1025.00</td>
+    </tr>
+    <tr>
+      <td>POWER-001</td>
+      <td>2</td>
+      <td>power_mw</td>
+      <td>905.00</td>
+      <td>905.00</td>
+      <td>921.00</td>
+      <td>921.00</td>
+      <td>889.00</td>
+      <td>921.00</td>
+    </tr>
+    <tr>
+      <td>AI-001</td>
+      <td>2</td>
+      <td>inference_latency_ms</td>
+      <td>68.16</td>
+      <td>67.20</td>
+      <td>76.50</td>
+      <td>77.80</td>
+      <td>62.00</td>
+      <td>77.80</td>
+    </tr>
+    <tr>
+      <td>CAM-001</td>
+      <td>2</td>
+      <td>camera_open_latency_ms</td>
+      <td>95.00</td>
+      <td>95.00</td>
+      <td>95.00</td>
+      <td>95.00</td>
+      <td>95.00</td>
+      <td>95.00</td>
+    </tr>
+    <tr>
+      <td>STAB-001</td>
+      <td>2</td>
+      <td>soak_uptime_sec</td>
+      <td>1742.00</td>
+      <td>1742.00</td>
+      <td>1742.00</td>
+      <td>1742.00</td>
+      <td>1742.00</td>
+      <td>1742.00</td>
+    </tr>
+    <tr>
+      <td>BOOT-001</td>
+      <td>3</td>
+      <td>boot_time_sec</td>
+      <td>30.00</td>
+      <td>30.00</td>
+      <td>30.00</td>
+      <td>30.00</td>
+      <td>30.00</td>
+      <td>30.00</td>
+    </tr>
+    <tr>
+      <td>POWER-001</td>
+      <td>3</td>
+      <td>peak_power_mw</td>
+      <td>840.00</td>
+      <td>840.00</td>
+      <td>840.00</td>
+      <td>840.00</td>
+      <td>840.00</td>
+      <td>840.00</td>
+    </tr>
+    <tr>
+      <td>POWER-001</td>
+      <td>3</td>
+      <td>power_mw</td>
+      <td>720.00</td>
+      <td>720.00</td>
+      <td>736.00</td>
+      <td>736.00</td>
+      <td>704.00</td>
+      <td>736.00</td>
+    </tr>
+    <tr>
+      <td>AI-001</td>
+      <td>3</td>
+      <td>inference_latency_ms</td>
+      <td>41.84</td>
+      <td>41.90</td>
+      <td>45.80</td>
+      <td>45.80</td>
+      <td>38.00</td>
+      <td>45.80</td>
+    </tr>
+    <tr>
+      <td>CAM-001</td>
+      <td>3</td>
+      <td>camera_open_latency_ms</td>
+      <td>95.00</td>
+      <td>95.00</td>
+      <td>95.00</td>
+      <td>95.00</td>
+      <td>95.00</td>
+      <td>95.00</td>
+    </tr>
+    <tr>
+      <td>STAB-001</td>
+      <td>3</td>
+      <td>soak_uptime_sec</td>
+      <td>3600.00</td>
+      <td>3600.00</td>
+      <td>3600.00</td>
+      <td>3600.00</td>
+      <td>3600.00</td>
+      <td>3600.00</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

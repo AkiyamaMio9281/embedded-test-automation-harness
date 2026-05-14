@@ -1,0 +1,51 @@
+name: chipset_smoke
+device: simulated_android
+iterations: 3
+
+tests:
+  - id: BOOT-001
+    name: Boot completes within threshold
+    category: boot
+    command: simulate_boot
+    timeout_sec: 60
+    pass_criteria:
+      max_boot_time_sec: 35
+      forbidden_log_patterns:
+        - "kernel panic"
+        - "fatal exception"
+
+  - id: POWER-001
+    name: Idle power remains under threshold
+    category: power
+    command: simulate_idle_power
+    timeout_sec: 30
+    pass_criteria:
+      max_avg_power_mw: 800
+      max_peak_power_mw: 1100
+
+  - id: AI-001
+    name: AI inference latency stays below threshold
+    category: ai_inference
+    command: simulate_ai_inference
+    timeout_sec: 45
+    pass_criteria:
+      max_p95_latency_ms: 50
+
+  - id: CAM-001
+    name: Camera open succeeds and stays under latency budget
+    category: camera
+    command: simulate_camera_open
+    timeout_sec: 20
+    pass_criteria:
+      forbidden_log_patterns:
+        - "camera service error"
+        - "driver timeout"
+
+  - id: STAB-001
+    name: One-hour stability soak with no kernel panic
+    category: stability
+    command: simulate_stability_soak
+    timeout_sec: 60
+    pass_criteria:
+      forbidden_log_patterns:
+        - "kernel panic"

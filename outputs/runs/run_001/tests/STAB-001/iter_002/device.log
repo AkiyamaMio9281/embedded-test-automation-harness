@@ -1,0 +1,10 @@
+=== logcat ===
+01-01 00:00:01.000  100  100 I SystemServer: Entered the Android system server!
+01-01 00:00:02.500  100  100 I ActivityManager: Boot is finished
+01-01 00:00:03.100  120  140 I CameraService: Camera ready
+=== dmesg ===
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.123456] usb 1-1: new high-speed USB device number 2
+[    1.234567] wlan0: link up, 866Mbps
+[   42.012345] Kernel panic - not syncing: Attempted to kill init!
+[   42.012999] CPU: 0 PID: 1 Comm: init Not tainted

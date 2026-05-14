@@ -1,0 +1,6 @@
+test_id,iteration,source,timestamp,severity,subsystem,signature,message
+CAM-001,1,logcat,01-01 00:00:07.400,E,CameraService,camera_service_error,Camera service error: device disconnected
+CAM-001,1,dmesg,31.998877,E,qcom-camss 1b00000.camss,driver_timeout,driver timeout waiting for ISP ack
+CAM-001,1,dmesg,32.001234,E,qcom-camss 1b00000.camss,io_error,I/O error on CSID0
+STAB-001,2,dmesg,42.012345,F,Kernel panic - not syncing,kernel_panic,Attempted to kill init!
+AI-001,3,dmesg,58.776655,E,thermal thermal_zone0,thermal_throttling,"thermal throttling, cdev0: cooling state 3"

@@ -1,0 +1,10 @@
+01-01 00:00:04.500  150  150 I ActivityManager: Start proc 1234:com.example.app/u0a99 for activity {com.example.app/.MainActivity}
+01-01 00:00:05.300  200  220 E ActivityManager: ANR in com.example.app
+01-01 00:00:05.301  200  220 E ActivityManager: Reason: executing service com.example.app/.WorkerService
+01-01 00:00:05.302  200  220 E ActivityManager: Load: 14.5 / 13.9 / 12.1
+01-01 00:00:05.400  200  220 W Watchdog: !@Sync 1234 dispatch_check
+01-01 00:00:06.100  300  310 E AndroidRuntime: FATAL EXCEPTION: main
+01-01 00:00:06.101  300  310 E AndroidRuntime: Process: com.example.app, PID: 310
+01-01 00:00:06.102  300  310 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.example.app.Foo.bar()' on a null object reference
+01-01 00:00:06.200  400  410 W SELinux: avc:  denied  { read } for  pid=410 scontext=u:r:untrusted_app:s0 tcontext=u:object_r:vendor_data_file:s0 tclass=file permissive=0
+01-01 00:00:06.350  500  510 E binder: binder transaction failed - dead process

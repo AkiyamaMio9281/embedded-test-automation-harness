@@ -1,0 +1,16 @@
+run_id,test_id,iteration,status,duration_sec,failure_reason,log_path,metrics_path,triage_category,timestamp
+run_001,BOOT-001,1,pass,0.0000,,tests\BOOT-001\iter_001\device.log,tests\BOOT-001\iter_001\metrics.csv,,2026-05-14T21:59:28.423996+00:00
+run_001,POWER-001,1,pass,0.0000,,tests\POWER-001\iter_001\device.log,tests\POWER-001\iter_001\metrics.csv,,2026-05-14T21:59:28.424996+00:00
+run_001,AI-001,1,pass,0.0001,,tests\AI-001\iter_001\device.log,tests\AI-001\iter_001\metrics.csv,,2026-05-14T21:59:28.425997+00:00
+run_001,CAM-001,1,fail,0.0000,command exit_code=1,tests\CAM-001\iter_001\device.log,tests\CAM-001\iter_001\metrics.csv,Camera Subsystem,2026-05-14T21:59:28.426997+00:00
+run_001,STAB-001,1,pass,0.0000,,tests\STAB-001\iter_001\device.log,tests\STAB-001\iter_001\metrics.csv,,2026-05-14T21:59:28.427997+00:00
+run_001,BOOT-001,2,fail,0.0000,max_boot_time_sec breached: 38.50 > 35.00,tests\BOOT-001\iter_002\device.log,tests\BOOT-001\iter_002\metrics.csv,Boot Regression,2026-05-14T21:59:28.429063+00:00
+run_001,POWER-001,2,fail,0.0000,max_avg_power_mw breached: 905.00 > 800.00,tests\POWER-001\iter_002\device.log,tests\POWER-001\iter_002\metrics.csv,Power Regression,2026-05-14T21:59:28.429063+00:00
+run_001,AI-001,2,fail,0.0004,max_p95_latency_ms breached: 76.50 > 50.00,tests\AI-001\iter_002\device.log,tests\AI-001\iter_002\metrics.csv,Performance Regression,2026-05-14T21:59:28.430566+00:00
+run_001,CAM-001,2,pass,0.0000,,tests\CAM-001\iter_002\device.log,tests\CAM-001\iter_002\metrics.csv,,2026-05-14T21:59:28.432571+00:00
+run_001,STAB-001,2,fail,0.0000,command exit_code=1,tests\STAB-001\iter_002\device.log,tests\STAB-001\iter_002\metrics.csv,System Stability,2026-05-14T21:59:28.433572+00:00
+run_001,BOOT-001,3,pass,0.0000,,tests\BOOT-001\iter_003\device.log,tests\BOOT-001\iter_003\metrics.csv,,2026-05-14T21:59:28.433572+00:00
+run_001,POWER-001,3,pass,0.0000,,tests\POWER-001\iter_003\device.log,tests\POWER-001\iter_003\metrics.csv,,2026-05-14T21:59:28.434572+00:00
+run_001,AI-001,3,pass,0.0001,,tests\AI-001\iter_003\device.log,tests\AI-001\iter_003\metrics.csv,,2026-05-14T21:59:28.435572+00:00
+run_001,CAM-001,3,pass,0.0000,,tests\CAM-001\iter_003\device.log,tests\CAM-001\iter_003\metrics.csv,,2026-05-14T21:59:28.436571+00:00
+run_001,STAB-001,3,pass,0.0000,,tests\STAB-001\iter_003\device.log,tests\STAB-001\iter_003\metrics.csv,,2026-05-14T21:59:28.437571+00:00

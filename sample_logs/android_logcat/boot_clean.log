@@ -1,0 +1,6 @@
+01-01 00:00:01.000  100  100 I SystemServer: Entered the Android system server!
+01-01 00:00:01.231  100  100 I ActivityManager: Boot animation started
+01-01 00:00:02.500  100  100 I ActivityManager: Boot is finished
+01-01 00:00:03.100  120  140 I CameraService: Camera ready
+01-01 00:00:03.890  120  140 I AudioFlinger: Audio HAL initialized
+01-01 00:00:04.001  120  140 I PackageManager: 412 packages enumerated

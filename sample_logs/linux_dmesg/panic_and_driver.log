@@ -1,0 +1,8 @@
+[   31.998877] qcom-camss 1b00000.camss: driver timeout waiting for ISP ack
+[   32.001234] qcom-camss 1b00000.camss: I/O error on CSID0
+[   33.554321] firmware_class: firmware: failed to load qcom/adreno630_sqe.fw for adreno
+[   42.012345] Kernel panic - not syncing: Attempted to kill init!
+[   42.012999] CPU: 0 PID: 1 Comm: init Not tainted
+[   58.776655] thermal thermal_zone0: thermal throttling, cdev0: cooling state 3
+[   59.000122] BUG: unable to handle kernel paging request — Oops
+[   60.123456] traps: app[1234] segfault at 0 ip 00007f1a2b3c4d5e

@@ -1,0 +1,2 @@
+timestamp,metric,value,unit
+2026-05-14T10:00:00+00:00,camera_open_latency_ms,95.0,ms

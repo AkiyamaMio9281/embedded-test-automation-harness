@@ -1,0 +1,12 @@
+=== logcat ===
+01-01 00:00:01.000  100  100 I SystemServer: Entered the Android system server!
+01-01 00:00:02.500  100  100 I ActivityManager: Boot is finished
+01-01 00:00:03.100  120  140 I CameraService: Camera ready
+01-01 00:00:07.400  120  140 E CameraService: Camera service error: device disconnected
+01-01 00:00:07.401  120  140 E BufferQueueProducer: dequeueBuffer: BufferQueue has been abandoned
+=== dmesg ===
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.123456] usb 1-1: new high-speed USB device number 2
+[    1.234567] wlan0: link up, 866Mbps
+[   31.998877] qcom-camss 1b00000.camss: driver timeout waiting for ISP ack
+[   32.001234] qcom-camss 1b00000.camss: I/O error on CSID0

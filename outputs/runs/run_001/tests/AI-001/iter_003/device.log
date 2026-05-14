@@ -1,0 +1,10 @@
+=== logcat ===
+01-01 00:00:01.000  100  100 I SystemServer: Entered the Android system server!
+01-01 00:00:02.500  100  100 I ActivityManager: Boot is finished
+01-01 00:00:03.100  120  140 I CameraService: Camera ready
+=== dmesg ===
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.123456] usb 1-1: new high-speed USB device number 2
+[    1.234567] wlan0: link up, 866Mbps
+[   58.776655] thermal thermal_zone0: thermal throttling, cdev0: cooling state 3
+[   58.776700] cpufreq: CPU0 frequency capped at 1.4GHz due to thermal

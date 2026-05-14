@@ -1,0 +1,11 @@
+timestamp,metric,value,unit
+2026-05-14T10:00:00,power_mw,720,mW
+2026-05-14T10:00:01,power_mw,742,mW
+2026-05-14T10:00:02,power_mw,701,mW
+2026-05-14T10:00:03,power_mw,815,mW
+2026-05-14T10:00:04,power_mw,769,mW
+2026-05-14T10:00:00,inference_latency_ms,42,ms
+2026-05-14T10:00:01,inference_latency_ms,39,ms
+2026-05-14T10:00:02,inference_latency_ms,45,ms
+2026-05-14T10:00:03,inference_latency_ms,58,ms
+2026-05-14T10:00:04,inference_latency_ms,49,ms

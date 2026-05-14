@@ -1,0 +1,2 @@
+timestamp,metric,value,unit
+2026-05-14T10:00:00+00:00,soak_uptime_sec,3600.0,s

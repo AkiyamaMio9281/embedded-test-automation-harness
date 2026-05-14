@@ -1,0 +1,16 @@
+{
+  "run_id": "run_001",
+  "plan_name": "chipset_smoke",
+  "device": "simulated_android",
+  "started_at": "2026-05-14T21:59:28.423996+00:00",
+  "finished_at": "2026-05-14T21:59:28.438572+00:00",
+  "pass_count": 10,
+  "fail_count": 5,
+  "flaky_test_ids": [
+    "AI-001",
+    "BOOT-001",
+    "CAM-001",
+    "POWER-001",
+    "STAB-001"
+  ]
+}

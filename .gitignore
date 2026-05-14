@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.env
+
+# Build
+build/
+dist/
+
+# Tests / coverage
+.pytest_cache/
+.pytest-tmp/
+.coverage
+htmlcov/
+
+# Tool caches
+.mypy_cache/
+.ruff_cache/
+
+# Project outputs — ignore by default, but check in the curated run_001
+# so the README's sample-output paths resolve from a clean clone.
+outputs/runs/*
+!outputs/runs/run_001/
+outputs/reports/
+# SQLite history files — ignore everything except the curated demo DB.
+*.sqlite
+*.db
+!outputs/history.sqlite
+
+# Editor / OS / tooling
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
