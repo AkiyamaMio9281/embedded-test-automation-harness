@@ -21,13 +21,7 @@ Build a realistic automation framework for embedded, Android, Linux, or ADAS-sty
 
 This project is designed for roles involving test automation, system validation, mobile chipset testing, Linux/Android debugging, QA, and AI-assisted test triage.
 
-Strong target roles:
 
-- Qualcomm AI/ADAS Test Automation Engineer
-- Qualcomm Software Engineer Intern
-- QA Intern
-- KLA Software Engineering Intern
-- Intel software roles with validation responsibilities
 
 ## Core Story
 
